@@ -5,7 +5,7 @@ const Input = () => {
                 <label>Option 1 </label>
                 <input
                         type="text"
-                        placeholder="Ootoro"
+                        placeholder="Sushi"
                         className="form--input"
                         name="email"
 
