@@ -31,5 +31,6 @@ yarn-error.log*
 # vercel
 .vercel
 
-/.history
-/.vscode
+.vscode/
+
+.history/
