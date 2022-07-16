@@ -1,16 +1,21 @@
-const Input = () => {
+import { useState } from "react";
+
+
+
+function Input({decision}){
+   
+     const createInputField =  decision.map( x => 
+     <div>
+        {x}
+     </div>
+     ) 
+
     return (
         <div>
-            <form>
                 <label>Option 1 </label>
-                <input
-                        type="text"
-                        placeholder="Sushi"
-                        className="form--input"
-                        name="email"
-
-                    />
-                </form>
+                 {createInputField}
+  
+                
         </div>
       );
 }
