@@ -1,21 +1,20 @@
 import { useState } from "react";
+import {nanoid} from "nanoid"
 
 
 
-function Input({decision}){
-   
-     const createInputField =  decision.map( x => 
-     <div>
-        {x}
-     </div>
-     ) 
+
+function Input(props){ 
+    const  toDecide = props.choicesList.map( x => 
+    <div key = {nanoid()}> {x} </div>
+    )  
 
     return (
+
         <div>
-                <label>Option 1 </label>
-                 {createInputField}
-  
-                
+            
+               
+                 <div> {toDecide}</div>
         </div>
       );
 }

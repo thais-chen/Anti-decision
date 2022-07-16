@@ -114,3 +114,7 @@
     flex-direction: column;
   }
 }
+
+.buttonIcon {
+  height: 25px;
+}

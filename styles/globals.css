@@ -14,3 +14,8 @@ a {
 * {
   box-sizing: border-box;
 }
+nav, footer{
+ display: flex;
+ justify-content: center;
+ background-color: aquamarine;
+}
