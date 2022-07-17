@@ -4,20 +4,21 @@ function CreateInputField(props){
 
     return (
         <div>
-          <form> 
+          <form>
           <h1>Add a choice </h1>
-          <input 
+          <input
+                value={props.newInput}
                 type="text"
                 placeholder="Top text"
-                 onInput={props.handleChange}  
+                onInput={props.handleChange}
             />
-            <button 
+            <button
                   type="button" onClick={props.createDecision}
                   />
           </form>
     </div>
      )
-    
+
   }
 
   export default CreateInputField;
