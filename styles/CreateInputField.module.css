@@ -1,0 +1,11 @@
+.formFlex{
+    display: flex;
+    justify-content: center;
+}
+ 
+.formStyle > * {
+ margin: 3px;    
+}
+.formStyle button {
+    height: 20px;
+}

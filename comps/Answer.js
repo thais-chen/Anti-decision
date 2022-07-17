@@ -1,8 +1,10 @@
+import AutoFixHighTwoToneIcon from '@mui/icons-material/AutoFixHighTwoTone';
+
 const Answer = ({chosenOne}) => {
  
     return (
     <div>
-        <button onClick={() => alert( chosenOne[Math.floor(Math.random() * chosenOne.length)])}></button>
+        <AutoFixHighTwoToneIcon onClick={() => alert( chosenOne[Math.floor(Math.random() * chosenOne.length)])}></AutoFixHighTwoToneIcon>
     </div> );
 }
 

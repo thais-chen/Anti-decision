@@ -6,8 +6,8 @@ import { useState, useEffect, useId } from "react";
 import {nanoid} from "nanoid"
 import Form from '../comps/Form'
 import ChoicesList from '../comps/ChoicesList ';
-import Answer from '../comps/Answer';
-
+import Answer from '../comps/Answer'; 
+import AutoFixHighTwoToneIcon from '@mui/icons-material/AutoFixHighTwoTone';
 
 export default function Home() {
 //adds choice to the list of decisions and is array of decisions
@@ -45,8 +45,7 @@ function createDecision(){
         createDecision={createDecision}
         newInput={newInput}
         />
-
-      <ChoicesList decisionInput = {decisionInput}/>
+       <ChoicesList decisionInput = {decisionInput}/>
       <Answer chosenOne = {decisionInput}/>
     </div>
   )
