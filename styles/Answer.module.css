@@ -1,3 +1,11 @@
 .decisionfinal{
-    background-color: aqua;
+    width:50%;
+    margin: 2rem auto;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    border-style: solid
 }
+ 

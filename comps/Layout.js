@@ -1,13 +1,13 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import styles from "../styles/Navbar.module.css"
+import styles from "../styles/Layout.module.css";
 
- 
+
 
 const Layout = ({children}) => {
     return (
-        <div>
-            <Navbar className={styles.navFlex} />
+        <div className={styles.layoutSize}>
+            <Navbar/>
             {children}
             <Footer />
         </div>

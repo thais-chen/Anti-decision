@@ -1,8 +1,8 @@
- 
+
 const Navbar = () => {
     return (
        <nav>
-            <h1>Navbar</h1>
+            <h1>ANTI-DECISION</h1>
         </nav>
        );
 }
