@@ -19,4 +19,7 @@ nav, footer{
  justify-content: center;
  background-color: aquamarine;
 }
- 
+ul{
+  list-style: none;
+  padding-inline-start: 0
+}

@@ -1,10 +1,20 @@
 import AutoFixHighTwoToneIcon from '@mui/icons-material/AutoFixHighTwoTone';
-
-const Answer = ({chosenOne}) => {
+import { useState } from 'react';
+import styles from "../styles/Answer.module.css";
  
-    return (
+const Answer = ({chosenOne}) => {
+     const chosenOneBody = chosenOne.map(choice => choice.body)
+     const [chosen,setChosen] = useState("")
+     
+    return ( 
     <div>
-        <AutoFixHighTwoToneIcon onClick={() => alert( chosenOne[Math.floor(Math.random() * chosenOne.length)])}></AutoFixHighTwoToneIcon>
+         
+        <button onClick={()=>{  setChosen( chosenOneBody[Math.floor(Math.random() * chosenOneBody.length)] ) }}> <AutoFixHighTwoToneIcon /> </button>
+        
+        <div className={styles.decisionfinal}> 
+             <h1> {chosen}</h1>
+        </div>
+      
     </div> );
 }
 

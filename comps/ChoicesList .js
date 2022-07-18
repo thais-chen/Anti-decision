@@ -1,9 +1,12 @@
-function ChoicesList(props){
+function ChoicesList( {decisionInput}){
     return (
    <div>
     <ul>
-        {props.decisionInput.map(x =>
-            <li key = {props.decisionInput.id}> {x} </li>)}
+        {decisionInput.map((x) =>
+            <li key = {x.id}>
+                 {x.body} 
+            </li>
+            )}
     </ul>
    </div>)
 

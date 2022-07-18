@@ -1,37 +1,36 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Input from '../comps/Input'
 import { useState, useEffect, useId } from "react";
-import {nanoid} from "nanoid"
 import Form from '../comps/Form'
 import ChoicesList from '../comps/ChoicesList ';
 import Answer from '../comps/Answer'; 
 import AutoFixHighTwoToneIcon from '@mui/icons-material/AutoFixHighTwoTone';
+import { nanoid } from 'nanoid';
 
 export default function Home() {
 //adds choice to the list of decisions and is array of decisions
 const [decisionInput,setDecisionInput] = useState([])
+//string of input
+const [newInput,setNewInput] = useState("")
+
 
 function createDecision(){
   if (newInput.length > 0){
     const newDecision = {
-      id: nanoid(),
-      body: newInput
+      body:newInput,
+      id: nanoid()
     }
-    setDecisionInput( oldDecision => [...oldDecision, newDecision.body])
+    //adds input to choice list
+    setDecisionInput( oldDecision => [...oldDecision, newDecision])
+    //clears input field
      setNewInput("")
   }
   }
-  //removes choice from the list of decisions
-  const [newInput,setNewInput] = useState("")
-  console.log(newInput)
-
+  //updates current string input value
   const handleChange = event => {
   setNewInput(event.target.value)
-  }
-
-
+  } 
 
   return (
     <div className={styles.container}>
@@ -46,7 +45,8 @@ function createDecision(){
         newInput={newInput}
         />
        <ChoicesList decisionInput = {decisionInput}/>
-      <Answer chosenOne = {decisionInput}/>
+      <Answer chosenOne = {decisionInput}
+              />
     </div>
   )
 }
