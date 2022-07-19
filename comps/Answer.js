@@ -24,7 +24,7 @@ const Answer = (props) => {
 
     <div className={styles.decisionFinalContainer}>
         {props.chosenOne.length > 1 &&   //if there is more than one choice
-        <button classname={styles.buttonDiv} onClick={()=>{
+        <button className={styles.buttonDiv} onClick={()=>{
             props.setShowChoice(true)
             setChosen( chosenOneBody[Math.floor(Math.random() * chosenOneBody.length)] )
 

@@ -9,7 +9,6 @@ const Layout = ({children}) => {
         <div className={styles.layoutSize}>
             <Navbar/>
             {children}
-            <Footer />
         </div>
       );
 }

@@ -12,11 +12,12 @@
 .containerList {
     margin-top: 1.4rem;
     overflow: auto;
+    
 
  }
 @media screen and (min-width: 600px) {
     .containerList  {
-        max-height: 500px;
+        max-height: 300px;
     }
     .choiceItem{
         width: 50%;

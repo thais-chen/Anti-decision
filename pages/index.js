@@ -31,7 +31,7 @@ function createDecision(){
   //resets app
   const [restartDecision, setRestartDecision] = useState(false)
   const [showChoice, setShowChoice] = useState(false)
-  const [resetList, setResetList] = useState(false)
+  const [resetList, setResetList] = useState(true)
 
   const resetApp = () => {
     setShowChoice(false)

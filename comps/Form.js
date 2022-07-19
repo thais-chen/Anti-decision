@@ -1,4 +1,5 @@
-import AddOutlinedIcon from '@mui/icons-material/AddOutlined';import styles from  "../styles/CreateInputField.module.css"
+import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
+import styles from  "../styles/CreateInputField.module.css"
 
 
 function CreateInputField(props){
@@ -20,7 +21,7 @@ function CreateInputField(props){
             }
                 `}</style>
 
-          <form className = {styles.formFlex}>
+          <form className = {styles.formFlex} onSubmit={e => { e.preventDefault(); }}>
                  <input
                     value={props.newInput}
                     type="text"

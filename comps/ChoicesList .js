@@ -11,7 +11,7 @@ function ChoicesList(props) {
     return (
         ///if there is more than one choice show list of choices
 
-        <div className={styles.containerList}>
+        <div className={styles.containerList} style={{display: props.resetList ? 'none' : 'block'}}>
         { decisionLength > 0 && !props.resetList &&
         <ul>
             {props.decisionInput.map((x) =>
