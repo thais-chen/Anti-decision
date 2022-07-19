@@ -3,9 +3,12 @@
   display: flex;
   flex-direction: column;
   background-color: honeydew;
+
   width: 100%;
   height: 100vh;
   justify-content: center;
+  position: relative;
+  padding-top: 1rem;
 
 
 }
@@ -13,9 +16,18 @@
   display: flex;
   flex-direction: column;
   align-content: center;
-  max-height: 50vh;
+  max-height: 600px;
+  width: 80%;
+  margin: auto;
 }
 
 .buttonIcon {
   height: 25px;
+}
+@media screen and (min-width: 600px) {
+  .mainContent  {
+    max-height: 800px;
+  }
+
+
 }
