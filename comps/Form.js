@@ -1,6 +1,7 @@
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 import styles from  "../styles/CreateInputField.module.css"
 import { green } from '@mui/material/colors';
+import { white } from '@mui/material/colors';
 
 
 
@@ -30,7 +31,7 @@ function CreateInputField(props){
                     placeholder="Add a choice..."
                     onInput={props.handleChange}
                 />
-                <AddOutlinedIcon type="button" className={styles.circleIcon} onClick={props.createDecision} sx={{ fontSize:50, color:green[800] } } />
+                <AddOutlinedIcon type="button" className={styles.circleIcon} onClick={props.createDecision} sx={{ fontSize:50, color:white} } />
           </form>
     </div>
      )

@@ -2,6 +2,7 @@ import AutoFixHighTwoToneIcon from '@mui/icons-material/AutoFixHighTwoTone';
 import { useState } from 'react';
 import styles from "../styles/Answer.module.css";
 import { green } from '@mui/material/colors';
+import { white } from '@mui/material/colors';
 const Answer = (props) => {
      const chosenOneBody = props.chosenOne.map(choice => choice.body)
      const [chosen,setChosen] = useState("")
@@ -28,7 +29,7 @@ const Answer = (props) => {
             props.setShowChoice(true)
             setChosen( chosenOneBody[Math.floor(Math.random() * chosenOneBody.length)] )
 
-         }}> <AutoFixHighTwoToneIcon  sx={{ fontSize:50, color: green[800] } } /> Get Decision </button>}
+         }}> <AutoFixHighTwoToneIcon  sx={{ fontSize:50, color: white} } /> Get Decision </button>}
 
            {props.showChoice &&
            <div className={styles.decisionfinal} onMouseEnter = {handleMouseOver} onMouseLeave={handleMouseOut} onClick={props.resetApp} >
