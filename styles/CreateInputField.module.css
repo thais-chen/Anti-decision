@@ -26,12 +26,12 @@
 
 }
 
-.circleIcon{
+/* .circleIcon{
     font-size: 35px;
     color:rgba(0, 128, 0, 0.899);
     
 
-}
+} */
 
 
 @media screen and (min-width: 600px) {
@@ -40,8 +40,9 @@
         height: 50px;
         font-size :40px;
     }
-    .circleIcon{
+}
+   /*  .circleIcon{
         font-size: 70px;
     }
-}
+} */
 
