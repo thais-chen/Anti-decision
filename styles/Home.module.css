@@ -13,8 +13,8 @@
 .mainContent{
   display: flex;
   flex-direction: column;
-  align-content: center;
-  overflow: auto;
+  /* align-content: center; */
+  /* overflow: auto; */
   width: 80%;
   margin: 1rem auto;
 

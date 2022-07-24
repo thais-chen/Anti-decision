@@ -18,9 +18,10 @@ function CreateInputField(props){
               font-size: 20px;
               font-family: 'Rubik', sans-serif;
             }
-            @media screen and (min-width: 600px) {
+            @media screen and (min-width: 800px) {
               ::placeholder {
                 font-size: 40px;
+                padding:10px;
             }
                 `}</style>
 

@@ -7,17 +7,7 @@ const Answer = (props) => {
    const chosenOneBody = props.chosenOne.map(choice => choice.body)
    const [chosen, setChosen] = useState("")
  
-   const handleMouseOver = (e) => {
-      //set styles for mouseover
-      props.setRestartDecision(true)
-      setShowRestartText(true)
-   }
-   const handleMouseOut = (e) => {
-      //set styles for mouseout
-      setShowRestartText(false)
-      props.setRestartDecision(false)
-   }
-
+  
 
    return (
  
@@ -28,7 +18,7 @@ const Answer = (props) => {
                props.showAnswerDiv("show")
                setChosen(chosenOneBody[Math.floor(Math.random() * chosenOneBody.length)])
 
-            }}> <AutoFixHighTwoToneIcon sx={{ fontSize: 50, color: white }} /> Get Decision </button>}
+            }}> <AutoFixHighTwoToneIcon sx={{ fontSize: 50, color: green }} /> Get Decision </button>}
 
          {props.showChoice &&
                 <div className={styles.decisionContainer}>{chosen}</div>
