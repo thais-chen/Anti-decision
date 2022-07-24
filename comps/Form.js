@@ -2,6 +2,7 @@ import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 import styles from  "../styles/CreateInputField.module.css"
 import { green } from '@mui/material/colors';
 import { white } from '@mui/material/colors';
+import RestartAltIcon from '@mui/icons-material/RestartAlt';
 
 
 
@@ -16,7 +17,6 @@ function CreateInputField(props){
               padding:2px;
               font-size: 20px;
               font-family: 'Rubik', sans-serif;
-
             }
             @media screen and (min-width: 600px) {
               ::placeholder {
@@ -32,6 +32,7 @@ function CreateInputField(props){
                     onInput={props.handleChange}
                 />
                 <AddOutlinedIcon type="button" className={styles.circleIcon} onClick={props.createDecision} sx={{ fontSize:50, color:white} } />
+                {/* <RestartAltIcon type="button"   onClick={props.resetApp} sx={{ fontSize:50, color:white} } /> */}
           </form>
     </div>
      )

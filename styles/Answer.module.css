@@ -16,17 +16,26 @@
 }
 .decisionFinalContainer{
     display: flex;
-    
+  
      margin-top: 2rem;
     flex-direction: column;
     justify-content:flex-start;
+     
+}
+.decisionContainer{
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.506);
+    border-radius: 15px;
     
-
-
+    
 }
 .decisionFinalContainer button{
     font-size: 29px;
-color: white;    border: none;
+    color: white; 
+    border: none;
     background-color: green;
     font-weight: 500;
     border-radius: 25px;
@@ -35,11 +44,7 @@ color: white;    border: none;
 }
 
 @media screen and (min-width: 600px) {
-    .decisionFinalContainer{
-        height: 300px;
-        width: 50%;
-        margin: 2rem auto; 
-    }
+ 
     .decisionfinal{
         pointer-events: auto;
     }

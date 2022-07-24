@@ -1,7 +1,7 @@
 
-const Navbar = () => {
+const Navbar = (props) => {
     return (
-       <nav>
+       <nav onClick={props.resetApp}>
             <h1>ANTI-DECISION</h1>
         </nav>
        );
