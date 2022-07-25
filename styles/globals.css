@@ -31,8 +31,15 @@ nav{
  height: 150px;
  display: flex;
  align-items: center;
+ font-family: 'Nunito Sans', sans-serif;
+font-weight: 800;
   justify-content: center;
   font-size: x-large;
+}
+nav > h1{
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  font-size: 10vw;
 }
 ul{
   list-style: none;

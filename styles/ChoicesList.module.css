@@ -1,24 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;800&display=swap');
 
 .choiceItem{
-    background-color: rgba(88, 205, 135, 0.428);
-    margin: 1rem auto;
-    border-radius: 40px;
+    
     padding: 5px;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-weight: 100;
     font-size: 25px;
 
+
 }
 .containerList {
- 
-    overflow: auto;
-    
-
+     /* overflow: auto; */
+     width: -webkit-fill-available;
+         overflow-wrap: break-word;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 5px 15px 0 hsla(0, 0%, 0%, 0.15);
  }
 @media screen and (min-width: 600px) {
-   
-    .choiceItem{
-        width: 50%;
-    }
+ .containerList{
+    width: 50%;
+ }   
 }
 

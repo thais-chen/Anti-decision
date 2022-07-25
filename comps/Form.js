@@ -16,7 +16,7 @@ function CreateInputField(props){
               color: rgb(147, 141, 141);
               padding:2px;
               font-size: 20px;
-              font-family: 'Rubik', sans-serif;
+              font-family: 'Nunito Sans', sans-serif;
             }
             @media screen and (min-width: 800px) {
               ::placeholder {
