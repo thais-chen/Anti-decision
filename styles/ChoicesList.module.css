@@ -6,7 +6,7 @@
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 100;
     font-size: 25px;
-
+ margin-bottom: 1rem;
 
 }
 .containerList {
@@ -14,7 +14,7 @@
      width: -webkit-fill-available;
          overflow-wrap: break-word;
     margin: auto;
-    background-color: white;
+    background-color: hsl(147, 88%, 86%);
     box-shadow: 0 5px 15px 0 hsla(0, 0%, 0%, 0.15);
  }
 @media screen and (min-width: 600px) {
