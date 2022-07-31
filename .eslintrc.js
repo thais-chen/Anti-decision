@@ -7,6 +7,9 @@ module.exports = {
     'plugin:react/recommended',
     'airbnb',
     "prettier",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "next/core-web-vitals"
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -20,6 +23,6 @@ module.exports = {
   ],
   rules: {
   },
-  
- 
+
+
 };
