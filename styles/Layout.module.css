@@ -1,6 +1,5 @@
 .layoutSize {
   width: 100%;
-   background-color: gainsboro;
   position: relative;
   display: flex;
   flex-direction: column ;

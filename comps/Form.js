@@ -13,15 +13,17 @@ function CreateInputField(props){
 
           <style jsx>{`
             ::placeholder {
-              color: rgb(147, 141, 141);
+               color: rgb(206, 165, 69);
               padding:2px;
-              font-size: 20px;
+padding-left:0;
+              font-size: 30px;
               font-family: 'Nunito Sans', sans-serif;
             }
             @media screen and (min-width: 800px) {
               ::placeholder {
                 font-size: 40px;
                 padding:10px;
+padding-left:0;
             }
                 `}</style>
 
@@ -32,7 +34,7 @@ function CreateInputField(props){
                     placeholder="Add a choice..."
                     onInput={props.handleChange}
                 />
-                <AddOutlinedIcon type="button" className={styles.circleIcon} onClick={props.createDecision} sx={{ fontSize:50, color:white} } />
+                <AddOutlinedIcon type="button" className={styles.circleIcon} onClick={props.createDecision} sx={{ fontSize:70}} />
                 {/* <RestartAltIcon type="button"   onClick={props.resetApp} sx={{ fontSize:50, color:white} } /> */}
           </form>
     </div>

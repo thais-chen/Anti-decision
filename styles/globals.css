@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
 
 html,
 body {
@@ -8,7 +10,9 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     height: 100%;
     overflow-x: hidden;
-    background: #f0fff0;
+  background-color: #28602b;
+  background-image:url("../public/topography.svg");
+background-repeat: repeat;
     width: 100%;
 }
  body > *{
@@ -22,7 +26,7 @@ a {
 * {
   box-sizing: border-box;
 }
-nav{
+/* nav{
    top: 0;
   width: 100%;
   text-align: center;
@@ -32,19 +36,32 @@ nav{
  display: flex;
  align-items: center;
  font-family: 'Nunito Sans', sans-serif;
-font-weight: 800;
-  justify-content: center;
+   justify-content: center;
   font-size: x-large;
-}
-nav > h1{
+} */
+.title{
   letter-spacing: 1.5px;
-  font-weight: 700;
-  font-size: 8vw;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5vh;
+color: #d7eed8;
+text-align: center;
+}
+@media screen and (min-width:760px){
+  .title{
+  font-size: 15vh;
+float: left;
+margin-left: 3rem;
+}
 }
 ul{
   list-style: none;
   padding-inline-start: 0
 }
+input:focus, textarea:focus, select:focus, button:focus{
+
+    outline: none !important}
+
+
 button :hover{
    color: white;
 }

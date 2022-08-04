@@ -2,7 +2,6 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  background-color: honeydew;
   justify-content: flex-start;
   width: 100%;
     position: relative;
@@ -10,6 +9,7 @@
 
 
 }
+
 .mainContent{
   display: flex;
   flex-direction: column;
@@ -27,7 +27,7 @@
   .mainContent  {
     max-height: 800px;
   }
- 
+
 
 
 }

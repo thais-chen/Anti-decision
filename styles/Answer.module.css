@@ -19,7 +19,10 @@
       margin-top: 2rem;
     flex-direction: column;
     justify-content:flex-start;
-     
+
+
+
+
 }
 .decisionContainer{
     height: 130px;
@@ -32,39 +35,39 @@
      border-radius: 15px;
      font-family: 'Nunito Sans', sans-serif;
       font-size: xx-large;
-   
+
      width: 50%;
      margin: 1rem auto 1rem;
 
-    
-    
+
+
 }
 .decisionFinalContainer button{
     font-size: 29px;
     width: 50%;
     margin: auto;
-    color: green; 
+    color: #ebf7ec;
     border: none;
     background-color: transparent;
     font-weight: 500;
-    border-radius: 25px; 
+    border-radius: 25px;
 }
 
 @media screen and (min-width: 600px) {
- 
+
     .decisionfinal{
         pointer-events: auto;
     }
     .decisionFinalContainer button{
-      
+
         padding: 0.5rem;
         margin-bottom: 1rem;
         font-size: 50px;
     }
-    
+
 
 }
- 
+
 
 @keyframes gradient {
 	0% {
