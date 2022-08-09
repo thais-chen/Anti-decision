@@ -12,6 +12,7 @@ body {
     overflow-x: hidden;
   background-color: #28602b;
   background-image:url("../public/topography.svg");
+  background-size:contain;
 background-repeat: repeat;
     width: 100%;
 }

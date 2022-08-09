@@ -16,9 +16,10 @@
 }
 .decisionFinalContainer{
     display: flex;
-      margin-top: 2rem;
     flex-direction: column;
     justify-content:flex-start;
+    margin-top: 2rem;
+
 
 
 
